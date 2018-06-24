@@ -35,6 +35,26 @@
         <li class="course"><a href="#">Massaggio tradizionale thailandese</a></li>
       </ul>
     </section>
+    <div class="divider"></div>
+    <section class="contact">
+      <form class="flex-form">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="Scrivi il tuo nome" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Scrivi la tua e-mail" required>
+        <label for="corso">Corso</label>
+        <select name="corsi" id="corsi" required>
+          <option value="" selected>Scegli il corso</option>
+          <option value="drenante">Massaggio drenante per il wellness</option>
+          <option value="svedese">Massaggio svedese</option>
+          <option value="riflessologia">Riflessologia plantare</option>
+          <option value="thailandese">Massaggio tradizionale thailandese</option>
+        </select>
+        <label for="messaggio">Messaggio</label>
+        <textarea name="messaggio" id="messaggio" rows="7" placeholder="Chiedi informazioni" required></textarea>
+        <button class="submit-btn" type="submit">Invia</button>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <p class="copyright">&copy; 2018 CamLab Trieste</p>

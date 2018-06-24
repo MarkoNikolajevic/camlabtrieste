@@ -1,0 +1,50 @@
+.contact
+  padding: 30px
+
+  .flex-form
+    +flex
+    flex-direction: column
+
+    label
+      font-weight: 700
+      color: $mainColor
+      letter-spacing: 1.2px
+      text-transform: uppercase
+      font-size: 0.8rem
+      padding: 20px 0 5px 0
+
+    input,
+    select,
+    textarea
+      font-size: 0.9rem
+      padding: 7px 3px
+      letter-spacing: 1px
+      border-radius: 5px
+      border: 1px solid $mainColor
+      +transition
+      &:focus
+        outline-style: none
+        box-shadow: 0 5px 10px 0 rgba(34, 88, 117, 0.7)
+
+      &::placeholder
+        opacity: 0.8
+        color: $mainColor
+
+    .submit-btn
+      width: 150px
+      height: 32px
+      background: $mainColor
+      cursor: pointer
+      border: 1px solid $mainColor
+      border-radius: 5px
+      text-transform: uppercase
+      color: #fff
+      letter-spacing: 1px
+      margin-top: 30px
+      margin-left: auto
+      margin-right: auto
+      +transition
+      &:hover
+        background: $secondaryColor
+        border: 1px solid $secondaryColor
+        transform: translateY(-1px)
