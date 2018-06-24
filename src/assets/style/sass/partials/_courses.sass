@@ -1,0 +1,25 @@
+.courses
+  padding: 30px
+
+  .section-title
+    font-size: 1.125rem
+    color: $mainColor
+
+  .courses-list
+    list-style: none
+    padding-left: 15px
+
+    .course
+      padding: 10px 0
+      &::before
+        content: '•'
+        color: $mainColor
+        display: inline-block
+        width: 1rem
+        margin-left: -1rem
+      a
+        text-decoration: none
+        color: $mainColor
+        +transition
+        &:hover
+          text-decoration: underline
