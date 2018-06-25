@@ -24,3 +24,24 @@
     height: 5px
     margin: 6px 0
     border-radius: 5px
+
+.nav-mobile
+  +flex
+  flex-direction: column
+  align-items: center
+  width: 100vw
+  background: $mainColor
+  display: none
+
+  .nav-mobile-link
+    color: #fff
+    text-decoration: none
+    padding: 20px
+    width: 100%
+    text-align: center
+    letter-spacing: 1.2px
+    +transition
+    &:hover
+      background: #fff
+      color: $secondaryColor
+      border: 1px solid $mainColor
