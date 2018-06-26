@@ -31,17 +31,42 @@
   align-items: center
   width: 100vw
   background: $mainColor
+  text-align: center
+  position: absolute
+  z-index: 999
+
+.display-none
   display: none
 
-  .nav-mobile-link
-    color: #fff
+.nav-lists,
+.courses-dropdown,
+.amatoriale-dropdown,
+.professionale-dropdown,
+.crescita-dropdown
+  list-style: none
+
+  li
+    padding-top: 20px
+
+  a
+    color: white
     text-decoration: none
-    padding: 20px
-    width: 100%
-    text-align: center
     letter-spacing: 1.2px
-    +transition
-    &:hover
-      background: #fff
-      color: $secondaryColor
-      border: 1px solid $mainColor
+
+  .amatoriale-dropdown,
+  .professionale-dropdown,
+  .crescita-dropdown,
+  .courses-dropdown
+    display: none
+  // .nav-mobile-link
+  //   color: #fff
+  //   text-decoration: none
+  //   padding: 20px
+  //   width: 100%
+  //   text-align: center
+  //   letter-spacing: 1.2px
+  //   +transition
+  //   &:hover
+  //     background: #fff
+  //     color: $secondaryColor
+  //     border: 1px solid $mainColor
