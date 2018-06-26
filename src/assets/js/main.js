@@ -31,6 +31,7 @@ function closeNav() {
 		elem.addEventListener('click', function() {
 			hamburger.classList.remove('animated');
 			nav.classList.remove('slideLeft');
+			nav.classList.add('display-none');
 		});
 	});
 }
