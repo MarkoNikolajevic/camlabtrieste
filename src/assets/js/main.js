@@ -17,6 +17,7 @@ function mobileNav() {
 	hamburger.addEventListener('click', function() {
 		hamburger.classList.toggle('animated');
 		nav.classList.toggle('display-none');
+		nav.classList.toggle('slideLeft');
 		closeNav();
 	});
 }
@@ -29,7 +30,7 @@ function closeNav() {
 	links.forEach(function(elem) {
 		elem.addEventListener('click', function() {
 			hamburger.classList.remove('animated');
-			nav.classList.add('display-none');
+			nav.classList.remove('slideLeft');
 		});
 	});
 }

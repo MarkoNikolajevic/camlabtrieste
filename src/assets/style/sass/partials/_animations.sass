@@ -6,3 +6,14 @@
 
 .fadeIn
   animation: fadeIn 400ms ease-in-out
+
+@keyframes slideLeft
+  0%
+    opacity: 0
+    transform: translateX(100%)
+  100%
+    opacity: 1
+    transform: none
+
+.slideLeft
+  animation: slideLeft 400ms ease-in-out
