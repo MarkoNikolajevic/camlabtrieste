@@ -2,8 +2,11 @@
 document.addEventListener('DOMContentLoaded', function() {
 	setTimeout(function() {
 		const headerText = document.querySelector('.camlab-story');
+		const courses = document.querySelector('.camlab-courses');
 		headerText.classList.remove('hidden-text');
-		headerText.classList.add('fadeIn');
+		headerText.classList.add('slideLeft');
+		courses.classList.remove('hidden-text');
+		courses.classList.add('slideRight');
 	}, 1000);
 });
 
