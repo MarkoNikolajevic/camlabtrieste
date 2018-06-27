@@ -75,7 +75,7 @@ gulp.task("serve", ["sass", "minifyJs"], function() {
   });
   gulp.watch("src/assets/style/sass/**/*.sass", ["sass"]);
   gulp.watch("src/assets/js/*.js", ["minifyJs"]);
-  gulp.watch("index.html").on("change", browserSync.reload);
+  gulp.watch("*.html").on("change", browserSync.reload);
 });
 
 // Default
