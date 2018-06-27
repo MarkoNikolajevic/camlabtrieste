@@ -40,44 +40,78 @@
   flex-direction: column
   align-items: center
   width: 100vw
+  height: 70vh
   background: $mainColor
   text-align: center
   position: absolute
   z-index: 999
   +transition
 
+  .nav-lists
+    padding: 0
+    margin: 0
+    width: 100%
+
+  .main-list
+    padding: 15px 0
+    +transition
+    &:hover
+      background: $secondaryColor
+      cursor: pointer
+    &:hover > ul
+      visibility: visible
+      opacity: 1
+      display: block
+
+    .nav-mobile-link
+      +link
+      display: block
+      +transition
+      &:hover
+        cursor: pointer
+
+    .courses-dropdown
+      visibility: hidden
+      opacity: 0
+      +transition
+      display: none
+      flex-direction: column
+      justify-content: center
+      list-style: none
+      background: $secondaryColor
+      padding: 15px 0
+      &:hover
+        visibility: visible
+        opacity: 1
+        display: block
+
+      .dropdown-item
+        padding: 15px 0
+        width: 100%
+        margin: 0
+        +flex
+        justify-content: center
+        border-bottom: 1px solid $mainColor
+        +transition
+        &:hover
+          background: $mainColor
+
+      .courses-link
+        +link
+        width: 100%
+        margin: 0
+        text-align: center
+        padding: 10px
+
 .display-none
   display: none
 
-.nav-lists,
-.courses-dropdown,
-.amatoriale-dropdown,
-.professionale-dropdown,
-.crescita-dropdown
-  list-style: none
+ul li:hover > ul,
+ul li ul:hover
+  visibility: visible
+  opacity: 1
+  display: block
 
-  li
-    padding-top: 20px
-
-  a
-    color: white
-    text-decoration: none
-    letter-spacing: 1.2px
-
-  .amatoriale-dropdown,
-  .professionale-dropdown,
-  .crescita-dropdown,
-  .courses-dropdown
-    display: none
-  // .nav-mobile-link
-  //   color: #fff
-  //   text-decoration: none
-  //   padding: 20px
-  //   width: 100%
-  //   text-align: center
-  //   letter-spacing: 1.2px
-  //   +transition
-  //   &:hover
-  //     background: #fff
-  //     color: $secondaryColor
-  //     border: 1px solid $mainColor
+ul li ul li
+  clear: both
+  width: 100%

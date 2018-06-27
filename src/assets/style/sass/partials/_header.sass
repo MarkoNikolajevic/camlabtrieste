@@ -8,7 +8,6 @@
     padding: 30px 15px
     color: $mainColor
     text-align: center
-    height: 50vh
     +flex
     +transition
     flex-direction: column
@@ -19,5 +18,25 @@
       line-height: 1.5rem
       +transition
 
+  .courses-intro
+    font-size: 1rem
+    letter-spacing: 1px
+
+  .header-courses-list
+    list-style: none
+    padding: 0
+
+    .home-courses-list
+      font-size: 0.9rem
+      letter-spacing: 1px
+      opacity: 0.8
+      padding: 5px 0
+      &::before
+        content: '•'
+        color: $mainColor
+        display: inline-block
+        width: 1rem
+        margin-left: -1rem
+
 .hidden-text
-  display: none
+  visibility: hidden
