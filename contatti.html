@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CamLab Trieste - Professionisti del benessere e nella cura della persona</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="dist/assets/style/css/main.min.css">
+</head>
+<body>
+  <nav class="navbar" role="navigation">
+    <div class="logo">
+      <img src="src/assets/image/logo.png" alt="CamLab Trieste">
+    </div>
+    <div class="hamburger-menu" aria-label="menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+  <nav class="nav-mobile display-none" role="navigation">
+    <ul class="nav-lists">
+      <li class="main-list"><a class="nav-mobile-link" href="./index.html">Home</a></li>
+      <li class="main-list"><a class="nav-mobile-link" href="./corsi.html">Corsi</a>
+        <ul class="courses-dropdown">
+          <li><a href="#">Area amatoriale</a>
+            <ul class="amatoriale-dropdown">
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio base</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio per cani e gatti</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Introduzione alla riflessologia di base</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio per la coppia</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Area professionale</a>
+            <ul class="professionale-dropdown">
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio drenante per il wellness</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio svedese</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Riflessologia plantare</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio tradizionale thailandese</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio decontratturante</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio wellness in ambito sportivo</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio articolare per il benessere</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Anatomia e fisiologia per massaggiatori</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Massaggio posturale</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Metodo OsteoNat (corso biennale)</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Area di crescita professionale</a>
+            <ul class="crescita-dropdown">
+              <li class="courses-list"><a class="courses-link" href="#">Yoga individuale</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Corso di con-tatto</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Corso di yoga per il benessere della schiena</a></li>
+              <li class="courses-list"><a class="courses-link" href="#">Corso di yoga e respirazione</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="main-list"><a class="nav-mobile-link" href="./contatti.html">Contatti</a></li>
+    </ul>
+  </nav>
+  <main class="main-card">
+    <section class="contact">
+      <form class="flex-form">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" name="nome" placeholder="Scrivi il tuo nome" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Scrivi la tua e-mail" required>
+        <label for="corso">Corso</label>
+        <select name="corsi" id="corsi" required>
+          <option value="" selected>Scegli il corso</option>
+          <option value="drenante">Massaggio drenante per il wellness</option>
+          <option value="svedese">Massaggio svedese</option>
+          <option value="riflessologia">Riflessologia plantare</option>
+          <option value="thailandese">Massaggio tradizionale thailandese</option>
+        </select>
+        <label for="messaggio">Messaggio</label>
+        <textarea name="messaggio" id="messaggio" rows="7" placeholder="Chiedi informazioni" required></textarea>
+        <button class="submit-btn" type="submit">Invia</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="copyright">&copy; 2018 CamLab Trieste</p>
+    <p>designed & coded by <a class="made-by" href="#">Marko Nikolajević</a></p>
+  </footer>
+  <script type="text/javascript" src="dist/assets/js/main.min.js"></script>
+</body>
+</html>
