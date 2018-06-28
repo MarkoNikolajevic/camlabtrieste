@@ -13,19 +13,19 @@ require("babel-register");
 
 // Optimize images
 gulp.task("optimizeImg", () =>
-  gulp.src("src/assets/img/*")
+  gulp.src("src/assets/image/*")
     .pipe(imagemin({
       progressive: true,
       verbose: true
     }))
-    .pipe(gulp.dest("dist/assets/img"))
+    .pipe(gulp.dest("dist/assets/image"))
 );
 
 // Convert images into webp format
 gulp.task("webpImg", () =>
-  gulp.src("dist/assets/img/*")
+  gulp.src("dist/assets/image/*")
     .pipe(webp())
-    .pipe(gulp.dest("dist/assets/img/"))
+    .pipe(gulp.dest("dist/assets/image/"))
 );
 
 // Compile sass and minify
