@@ -61,3 +61,11 @@ window.addEventListener('click', function(e) {
 		}
 	}
 });
+
+// Courses
+const drenante = document.querySelector('#drenante');
+const info = document.querySelector('.info');
+drenante.addEventListener('click', function() {
+	info.classList.toggle('slideDown');
+	info.classList.toggle('display-none');
+});
