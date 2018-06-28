@@ -38,3 +38,26 @@ function closeNav() {
 		});
 	});
 }
+
+// Dropdown menu
+openDrop();
+
+function openDrop() {
+	const drop = document.querySelector('.drop');
+	const content = document.querySelector('.drop-content');
+	drop.addEventListener('click', function() {
+		content.classList.toggle('open');
+		drop.classList.toggle('drop-padding');
+	});
+}
+
+window.addEventListener('click', function(e) {
+	if (!e.target.matches('.drop')) {
+		const content = document.querySelector('.drop-content');
+		const drop = document.querySelector('.drop');
+		if (content.classList.contains('open')) {
+			content.classList.remove('open');
+			drop.classListr.remove('drop-padding');
+		}
+	}
+});
