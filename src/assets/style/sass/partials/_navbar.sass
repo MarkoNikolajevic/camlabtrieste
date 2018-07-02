@@ -85,3 +85,28 @@
 
 .drop-padding
   padding-bottom: 15px
+
+// Large screen navbar
+.nav-larger
+  +flex
+  +padding
+  margin-bottom: $gutterWidth
+  width: 100%
+  justify-content: center
+
+  .nav-content-larger
+    color: $mainColor
+    text-decoration: none
+    margin: 0 15px
+    +letter-spacing
+    +transition
+    padding: 10px 15px
+    cursor: pointer
+    text-align: center
+    font-size: 1.5rem
+    border-bottom: 2px solid $mainColor
+    border-radius: 5px
+    &:hover
+      background: $secondaryColor
+      border-bottom: 2px solid $secondaryColor
+      color: #fff
