@@ -47,6 +47,7 @@ function openDrop() {
 	const content = document.querySelector('.drop-content');
 	drop.addEventListener('click', function() {
 		content.classList.toggle('open');
+		content.classList.toggle('slideDown');
 		drop.classList.toggle('drop-padding');
 	});
 }
@@ -57,7 +58,7 @@ window.addEventListener('click', function(e) {
 		const drop = document.querySelector('.drop');
 		if (content.classList.contains('open')) {
 			content.classList.remove('open');
-			drop.classListr.remove('drop-padding');
+			drop.classList.remove('drop-padding');
 		}
 	}
 });
