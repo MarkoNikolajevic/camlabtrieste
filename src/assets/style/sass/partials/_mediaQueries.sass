@@ -1,3 +1,7 @@
+@media screen and(max-width: 729px)
+  .nav-larger
+    display: none
+
 @media screen and (min-width: 730px)
   .main-card,
   .general-info
@@ -16,3 +20,20 @@
 
   .hamburger-menu
     display: none
+
+  .drop-content
+    align-items: center
+    z-index: 99
+    background: $mainColor
+    .courses-link
+      color: #fff
+      text-decoration: none
+      font-size: 1.25rem
+      padding: 15px
+      +transition
+      border-bottom: 1px solid black
+      width: 100%
+      text-align: center
+      &:hover
+        color: #fff
+        background: $secondaryColor
