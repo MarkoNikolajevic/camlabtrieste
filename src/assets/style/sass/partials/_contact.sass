@@ -48,3 +48,22 @@
         background: $secondaryColor
         border: 1px solid $secondaryColor
         transform: translateY(-1px)
+
+    .checkbox
+      margin-top: 30px
+
+      [type=checkbox]
+        margin-right: 10px
+
+      label
+        text-transform: none
+        font-size: 0.8rem
+        font-weight: 400
+
+        .privacy
+          color: $secondaryColor
+          font-weight: 700
+          text-decoration: none
+          +transition
+          &:hover
+            border-bottom: 1px solid $secondaryColor
