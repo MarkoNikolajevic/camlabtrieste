@@ -52,9 +52,18 @@ function openDrop() {
 }
 
 // Courses
-const drenante = document.querySelector('#drenante');
-const info = document.querySelector('.info');
-drenante.addEventListener('click', function() {
-	info.classList.toggle('slideDown');
-	info.classList.toggle('display-none');
-});
+
+showInfo();
+
+function showInfo() {
+	let corsi = document.querySelectorAll('.getInfoJs');
+	corsi = Array.from(corsi);
+	let info = document.querySelectorAll('.showInfoJs');
+	info = Array.from(info);
+	corsi.forEach(function(el, index) {
+		el.addEventListener('click', function() {
+			info[index].classList.toggle('display-none');
+			info[index].classList.toggle('slideDown');
+		});
+	});
+}
