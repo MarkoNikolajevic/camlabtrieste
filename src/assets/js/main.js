@@ -16,7 +16,7 @@ mobileNav();
 
 function mobileNav() {
 	const hamburger = document.querySelector('.hamburger-menu');
-	const nav = document.querySelector('.nav-mobile');
+	const nav = document.querySelector('.nav-content');
 	hamburger.addEventListener('click', function() {
 		hamburger.classList.toggle('animated');
 		nav.classList.toggle('display-none');
@@ -27,8 +27,8 @@ function mobileNav() {
 
 function closeNav() {
 	const hamburger = document.querySelector('.hamburger-menu');
-	const nav = document.querySelector('.nav-mobile');
-	let links = document.querySelectorAll('.nav-mobile-link');
+	const nav = document.querySelector('.nav-content');
+	let links = document.querySelectorAll('.closeNavJs');
 	links = Array.from(links);
 	links.forEach(function(elem) {
 		elem.addEventListener('click', function() {
@@ -43,25 +43,13 @@ function closeNav() {
 openDrop();
 
 function openDrop() {
-	const drop = document.querySelector('.drop');
-	const content = document.querySelector('.drop-content');
+	const drop = document.querySelector('.dropdown');
+	const content = document.querySelector('.content');
 	drop.addEventListener('click', function() {
 		content.classList.toggle('open');
 		content.classList.toggle('slideDown');
-		drop.classList.toggle('drop-padding');
 	});
 }
-
-window.addEventListener('click', function(e) {
-	if (!e.target.matches('.drop')) {
-		const content = document.querySelector('.drop-content');
-		const drop = document.querySelector('.drop');
-		if (content.classList.contains('open')) {
-			content.classList.remove('open');
-			drop.classList.remove('drop-padding');
-		}
-	}
-});
 
 // Courses
 const drenante = document.querySelector('#drenante');
