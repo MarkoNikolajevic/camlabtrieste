@@ -70,8 +70,10 @@
         </select>
         <label for="messaggio">Messaggio</label>
         <textarea name="messaggio" id="messaggio" rows="7" placeholder="Chiedi informazioni" required></textarea>
-        <!-- <input type="checkbox" name="privacy" id="privacy" required>
-        <label for="privacy">Ho letto e acconsento al trattamento dei dati personali</label> -->
+        <div class="checkbox">
+          <input type="checkbox" name="privacy" id="privacy" required>
+          <label for="privacy">Ho letto l'informativa sulla <a href="#" class="privacy" target="_blank">Privacy</a> e acconsento al trattamento dei dati personali</label>
+        </div>
         <button class="submit-btn" type="submit">Invia</button>
       </form>
     </section>
