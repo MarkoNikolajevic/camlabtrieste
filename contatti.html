@@ -68,11 +68,11 @@
   </nav>
   <main class="main-card">
     <section class="contact">
-      <form class="flex-form" action="mailto:camlabtrieste@gmail.com" method="post" enctype="text/plain">
+      <form class="flex-form" action="https://formspree.io/camlabtrieste@gmail.com" method="POST">
         <label for="nome">Nome</label>
         <input id="nome" type="text" name="nome" placeholder="Scrivi il tuo nome" required>
         <label for="email">Email</label>
-        <input id="email" type="email" name="email" placeholder="Scrivi la tua e-mail" required>
+        <input id="email" type="email" name="_replyto" placeholder="Scrivi la tua e-mail" required>
         <label for="corso">Corso</label>
         <select name="corsi" id="corsi" required>
           <option value="" selected>Scegli il corso</option>
@@ -113,7 +113,7 @@
           <label for="privacy">Normativa della Privacy secondo la GDPR del 25 maggio 2018</label>
           <!-- Ho letto l'informativa sulla <a href="#" class="privacy" target="_blank">Privacy</a> e acconsento al trattamento dei dati personali -->
         </div>
-        <button class="submit-btn" type="submit">Invia</button>
+        <button class="submit-btn" type="submit" value="Send">Invia</button>
       </form>
     </section>
   </main>
