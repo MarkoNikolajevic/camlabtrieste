@@ -67,56 +67,12 @@
     <a href="./contatti.html" class="nav-link closeNavJs">Contatti</a>
   </nav>
   <main class="main-card">
-    <section class="contact">
-      <form class="flex-form" action="https://formspree.io/camlabtrieste@gmail.com" method="POST">
-        <label for="nome">Nome</label>
-        <input id="nome" type="text" name="nome" placeholder="Scrivi il tuo nome" required>
-        <label for="email">Email</label>
-        <input id="email" type="email" name="_replyto" placeholder="Scrivi la tua e-mail" required>
-        <label for="corso">Corso</label>
-        <select name="corsi" id="corsi" required>
-          <option value="" selected>Scegli il corso</option>
-          <optgroup label="Corsi amatoriali">
-            <option value="base">Massaggio base</option>
-            <option value="cani e gatti">Maggaggio per cani e gatti</option>
-            <option value="riflessologia plantare intro">Introduzione alle riflessologia plantare</option>
-          </optgroup>
-          <optgroup label="Corsi professionali">
-            <option value="drenante wellness">Massaggio drenante per il wellness</option>
-            <option value="svedese">Massaggio svedese</option>
-            <option value="riflessologia plantare">Riflessologia plantare</option>
-            <option value="thailandese">Massaggio tradizionale thailandese</option>
-            <option value="californiano">Massaggio californiano</option>
-            <option value="wellness sportivo">Massaggio wellness in ambito sportivo e decontratturante</option>
-            <option value="anatomia e fisiologia">Anatomia e fisiologia per massaggiatori</option>
-            <option value="OsteoNat">Metodo OsteoNat (corso biennale)</option>
-          </optgroup>
-          <optgroup label="Crescita personale">
-            <option value="yoga">Yoga individuale</option>
-            <option value="con-tatto">Corso di con-tatto</option>
-            <option value="yoga schiena">Corso di yoga per il benessere della schiena</option>
-            <option value="yoga e respirazione">Corso di yoga e respirazione</option>
-          </optgroup>
-          <optgroup label="FAD (Formazione a Distanza)">
-            <option value="fad svedese">Massaggio svedese (base)</option>
-            <option value="fad plantare">Riflessologia plantare</option>
-            <option value="fad thailandese">Massaggio tradizionale thailandese</option>
-            <option value="fad decontratturante">Massaggio decontratturante</option>
-            <option value="fad rilassante wellness">Massaggio rilassante wellness</option>
-            <option value="fad drenante wellness">Massaggio drenante wellness</option>
-          </optgroup>
-        </select>
-        <label for="messaggio">Messaggio</label>
-        <textarea name="messaggio" id="messaggio" rows="7" placeholder="Chiedi informazioni" required></textarea>
-        <div class="checkbox">
-          <input type="checkbox" name="privacy" id="privacy" required>
-          <label for="privacy">Normativa della Privacy secondo la GDPR del 25 maggio 2018</label>
-          <!-- Ho letto l'informativa sulla <a href="#" class="privacy" target="_blank">Privacy</a> e acconsento al trattamento dei dati personali -->
-        </div>
-        <input type="hidden" name="_next" value="https://www.camlabtrieste.com/confirmed.html" />
-        <button class="submit-btn" type="submit" value="Send">Invia</button>
-      </form>
-    </section>
+    <div class="form-confirmed">
+      <div class="confirmed"><i class="fas fa-check-circle"></i></div>
+      <p class="confirmed-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora obcaecati quaerat distinctio quibusdam dignissimos.
+      </p>
+    </div>
   </main>
   <footer class="footer">
     <p class="copyright">&copy; 2018 CAMLAB TRIESTE<br>CF/P.IVA 01309200325<br>Tutti i diritti riservati</p>
